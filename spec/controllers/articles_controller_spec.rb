@@ -14,7 +14,7 @@ RSpec.describe ArticlesController, type: :controller do
     it "should return all articles" do
       get :index
       expect(response).to have_http_status :ok
-      expect(JSON.parse(response.body)["articles"].size).to be == 10
+      expect(JSON.parse(response.body)["articles"]["data"].size).to be == 10
     end
   end
 
@@ -22,8 +22,8 @@ RSpec.describe ArticlesController, type: :controller do
     it "should return article" do
       get :show, params: { id: @article.id }
       expect(response).to have_http_status :ok
-			expect(JSON.parse(response.body)["article"]["title"]).to eql @article.title
-			expect(JSON.parse(response.body)["article"]["body"]).to eql @article.body
+			expect(JSON.parse(response.body)["article"]["data"]["attributes"]["title"]).to eql @article.title
+			expect(JSON.parse(response.body)["article"]["data"]["attributes"]["body"]).to eql @article.body
     end
 
     it "should return article not found" do
@@ -55,8 +55,8 @@ RSpec.describe ArticlesController, type: :controller do
 		it "should update article" do
 			put :update, params: update_params
 			expect(response).to have_http_status :ok
-			expect(JSON.parse(response.body)["article"]["title"]).to eql new_title
-			expect(JSON.parse(response.body)["article"]["body"]).to eql @article.body
+			expect(JSON.parse(response.body)["article"]["data"]["attributes"]["title"]).to eql new_title
+			expect(JSON.parse(response.body)["article"]["data"]["attributes"]["body"]).to eql @article.body
 		end
 	end
 
