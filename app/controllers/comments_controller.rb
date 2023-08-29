@@ -2,21 +2,22 @@ class CommentsController < ApplicationController
   before_action :find_comment, only: %i[ show update destroy ]
 
   def index
-    render json: { comments: Comment.all }, status: :ok
+		comments = Comment.all
+    render json: { comments: CommentSerializer.new(comments).serializable_hash }, status: :ok
   end
 
   def show
 		if @comment
-			render json: { comment: @comment }, status: :ok
+			render json: { comment: CommentSerializer.new(@comment).serializable_hash }, status: :ok
 		end
   end
 
   def create
-    @comment = Comment.new(create_params)
-		if @comment.save
-			render json: { comment: @comment,  message: "Comment created successfully."  }, status: :ok
+    comment = Comment.new(create_params)
+		if comment.save
+			render json: { comment: CommentSerializer.new(comment).serializable_hash,  message: "Comment created successfully."  }, status: :ok
 		else
-			render json: { errors: @comment.errors }, status: :unprocessable_entity
+			render json: { errors: comment.errors }, status: :unprocessable_entity
 		end
 	rescue Exception => e
 		render json: { errors: e.message, message: "Oops! Something went wrong." }, status: :unprocessable_entity
@@ -24,7 +25,7 @@ class CommentsController < ApplicationController
 
   def update
 		if @comment.update(update_params)
-			render json: { comment: @comment, message: "Comment was successfully updated." }, state: :ok
+			render json: { comment: CommentSerializer.new(@comment).serializable_hash, message: "Comment was successfully updated." }, state: :ok
 		else
 			render json: { error: "Something went wrong.." }, status: :unprocessable_entity
 		end
@@ -32,7 +33,7 @@ class CommentsController < ApplicationController
 
   def destroy
     if @comment.destroy
-			render json: { message: "Comment was successfully destroyed." }, status: :ok
+			render json: { message: "Comment successfully deleted" }, status: :ok
 		else
 			render json: { errors: @comment.errors }, status: :unprocessable_entity
 		end

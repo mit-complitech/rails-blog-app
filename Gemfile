@@ -76,4 +76,4 @@ group :test do
 	gem 'faker'
 end
 
-gem 'active_model_serializers'
+gem 'fast_jsonapi'

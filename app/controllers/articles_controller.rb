@@ -2,14 +2,15 @@ class ArticlesController < ApplicationController
   before_action :find_article, only: %i[ show edit update destroy ]
 
 	def index
-		render json: { articles: Article.all }, status: :ok
+		articles = Article.all
+		render json: { articles: ArticleSerializer.new(articles).serializable_hash }, status: :ok
 	end
 
 	def show
 		if @article
-			render json: { article: @article, errors: nil }, status: :ok
+			render json: { article: ArticleSerializer.new(@article).serializable_hash, errors: nil }, status: :ok
 		else
-			render json: { article: nil, errors: @article.errors.full_messages }, status: :unprocessable_entity
+			render json: { errors: @article.errors.full_messages }, status: :unprocessable_entity
 		end
 	end
 
@@ -17,7 +18,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(create_params)
 
 		if @article.save
-			render json: { article: @article,  message: "article created successfully."  }, status: :created
+			render json: { article: ArticleSerializer.new(@article).serializable_hash,  message: "article created successfully."  }, status: :created
 		else
 			render json: { errors: @article.errors.full_messages }, status: :unprocessable_entity
 		end
@@ -25,7 +26,7 @@ class ArticlesController < ApplicationController
 
   def update
 		if @article.update(update_params)
-			render json: { article: @article,  message: "article updated successfully."  }, status: :ok
+			render json: { article: ArticleSerializer.new(@article).serializable_hash,  message: "article updated successfully."  }, status: :ok
 		else
 			render json: { errors: @article.errors.full_messages }, status: :unprocessable_entity
 		end
