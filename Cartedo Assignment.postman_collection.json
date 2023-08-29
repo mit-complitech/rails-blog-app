@@ -1,0 +1,2057 @@
+{
+	"info": {
+		"_postman_id": "f51fa98b-dc0a-4896-b66f-ead756e38102",
+		"name": "Cartedo Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24658589"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Show user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3000/users/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44b9580c6b3970b104c4f3300368bf3b\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "df987f93-095f-4fa3-9c77-8181f4989c71"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.004807"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.09, sql.active_record;dur=1.05, instantiation.active_record;dur=0.08, process_action.action_controller;dur=3.03"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"data\": {\n            \"id\": \"1\",\n            \"type\": \"user\",\n            \"attributes\": {\n                \"id\": 1,\n                \"name\": \"Parth P.\",\n                \"email\": \"parth@gmail.com\",\n                \"phone\": \"+91 349859485945\",\n                \"updated_at\": \"2023-08-29T17:55:30.794Z\",\n                \"created_at\": \"2023-08-29T17:55:30.794Z\",\n                \"articles\": {\n                    \"data\": []\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"User fetched successfully\"\n}"
+						},
+						{
+							"name": "Show user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3000/users/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f6aa8f0da21783e46259264a0f6714f2\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "7da15364-5e97-4637-9ee1-ec71c2998544"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.013857"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.13, sql.active_record;dur=1.60, instantiation.active_record;dur=0.04, process_action.action_controller;dur=5.45"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"data\": {\n            \"id\": \"2\",\n            \"type\": \"user\",\n            \"attributes\": {\n                \"id\": 2,\n                \"name\": \"Mit J Donga\",\n                \"email\": \"mitdonga@gmail.com\",\n                \"phone\": \"+91 349859485945\",\n                \"updated_at\": \"2023-08-29T18:00:02.484Z\",\n                \"created_at\": \"2023-08-29T17:57:48.329Z\"\n            },\n            \"relationships\": {\n                \"articles\": {\n                    \"data\": [\n                        {\n                            \"id\": \"1\",\n                            \"type\": \"article\"\n                        },\n                        {\n                            \"id\": \"2\",\n                            \"type\": \"article\"\n                        }\n                    ]\n                },\n                \"comments\": {\n                    \"data\": [\n                        {\n                            \"id\": \"3\",\n                            \"type\": \"comment\"\n                        },\n                        {\n                            \"id\": \"4\",\n                            \"type\": \"comment\"\n                        },\n                        {\n                            \"id\": \"5\",\n                            \"type\": \"comment\"\n                        },\n                        {\n                            \"id\": \"6\",\n                            \"type\": \"comment\"\n                        },\n                        {\n                            \"id\": \"7\",\n                            \"type\": \"comment\"\n                        }\n                    ]\n                }\n            }\n        }\n    },\n    \"message\": \"User fetched successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"Parth P.\",\n        \"email\": \"parth@gmail.com\",\n        \"phone\": \"+91 349859485945\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"name\": \"Parth P.\",\n        \"email\": \"parth@gmail.com\",\n        \"phone\": \"+91 349859485945\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3000/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "64a8f870-1858-4ae4-b8da-4e899fff63a9"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.063207"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "sql.active_record;dur=2.04, start_processing.action_controller;dur=0.10, process_action.action_controller;dur=7.56"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Something went wrong..\",\n    \"errors\": [\n        \"Email has already been taken\"\n    ]\n}"
+						},
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"name\": \"Mit Donga\",\n        \"email\": \"mit@donga.com\",\n        \"phone\": \"+91 349859485945\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3000/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"531e23388507025d73c493d753bbdc8b\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "74d81a94-f9c3-49b0-ac6f-162c129fc6be"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.028064"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.10, sql.active_record;dur=14.52, instantiation.active_record;dur=0.02, process_action.action_controller;dur=26.01"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"data\": {\n            \"id\": \"2\",\n            \"type\": \"user\",\n            \"attributes\": {\n                \"id\": 2,\n                \"name\": \"Mit Donga\",\n                \"email\": \"mit@donga.com\",\n                \"phone\": \"+91 349859485945\",\n                \"updated_at\": \"2023-08-29T17:57:48.329Z\",\n                \"created_at\": \"2023-08-29T17:57:48.329Z\",\n                \"articles\": {\n                    \"data\": []\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"User created successfully..\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"name\": \"Mit J Donga\",\n        \"email\": \"mitdonga@gmail.com\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"name\": \"Mit J Donga\",\n        \"email\": \"mitdonga@gmail.com\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3000/users/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"54b3b0c8b7387c5b0a8218ace863057a\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "0aa30329-f6f1-4965-bc0b-bfb41dfb1480"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.019792"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.09, sql.active_record;dur=14.44, instantiation.active_record;dur=0.07, process_action.action_controller;dur=17.70"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"data\": {\n            \"id\": \"2\",\n            \"type\": \"user\",\n            \"attributes\": {\n                \"id\": 2,\n                \"name\": \"Mit J Donga\",\n                \"email\": \"mitdonga@gmail.com\",\n                \"phone\": \"+91 349859485945\",\n                \"updated_at\": \"2023-08-29T18:00:02.484Z\",\n                \"created_at\": \"2023-08-29T17:57:48.329Z\",\n                \"articles\": {\n                    \"data\": []\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"User updated successfully..\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Index Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Index Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/users",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"da0705f3888390d6d6eeb921d6382183\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "54fbd70e-436b-4b92-be40-c6915999b4bc"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.059592"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.10, sql.active_record;dur=3.15, instantiation.active_record;dur=1.66, process_action.action_controller;dur=13.69"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"users\": {\n        \"data\": [\n            {\n                \"id\": \"1\",\n                \"type\": \"user\",\n                \"attributes\": {\n                    \"id\": 1,\n                    \"name\": \"Parth P.\",\n                    \"email\": \"parth@gmail.com\",\n                    \"phone\": \"+91 349859485945\",\n                    \"updated_at\": \"2023-08-29T17:55:30.794Z\",\n                    \"created_at\": \"2023-08-29T17:55:30.794Z\",\n                    \"articles\": {\n                        \"data\": []\n                    },\n                    \"comments\": {\n                        \"data\": []\n                    }\n                }\n            },\n            {\n                \"id\": \"2\",\n                \"type\": \"user\",\n                \"attributes\": {\n                    \"id\": 2,\n                    \"name\": \"Mit J Donga\",\n                    \"email\": \"mitdonga@gmail.com\",\n                    \"phone\": \"+91 349859485945\",\n                    \"updated_at\": \"2023-08-29T18:00:02.484Z\",\n                    \"created_at\": \"2023-08-29T17:57:48.329Z\",\n                    \"articles\": {\n                        \"data\": []\n                    },\n                    \"comments\": {\n                        \"data\": []\n                    }\n                }\n            }\n        ]\n    },\n    \"message\": \"All users\"\n}"
+						},
+						{
+							"name": "Index Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/users",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d709076ebd89ed2261e670b8b6fab8a0\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "e8730420-01d3-498d-ab6a-7a1228c4ae5e"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.004757"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.06, sql.active_record;dur=1.15, instantiation.active_record;dur=0.04, process_action.action_controller;dur=2.77"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"users\": {\n        \"data\": [\n            {\n                \"id\": \"2\",\n                \"type\": \"user\",\n                \"attributes\": {\n                    \"id\": 2,\n                    \"name\": \"Mit J Donga\",\n                    \"email\": \"mitdonga@gmail.com\",\n                    \"phone\": \"+91 349859485945\",\n                    \"updated_at\": \"2023-08-29T18:00:02.484Z\",\n                    \"created_at\": \"2023-08-29T17:57:48.329Z\"\n                },\n                \"relationships\": {\n                    \"articles\": {\n                        \"data\": [\n                            {\n                                \"id\": \"1\",\n                                \"type\": \"article\"\n                            },\n                            {\n                                \"id\": \"2\",\n                                \"type\": \"article\"\n                            }\n                        ]\n                    },\n                    \"comments\": {\n                        \"data\": [\n                            {\n                                \"id\": \"3\",\n                                \"type\": \"comment\"\n                            },\n                            {\n                                \"id\": \"4\",\n                                \"type\": \"comment\"\n                            },\n                            {\n                                \"id\": \"5\",\n                                \"type\": \"comment\"\n                            },\n                            {\n                                \"id\": \"6\",\n                                \"type\": \"comment\"\n                            },\n                            {\n                                \"id\": \"7\",\n                                \"type\": \"comment\"\n                            }\n                        ]\n                    }\n                }\n            }\n        ]\n    },\n    \"message\": \"All users\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/users/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e8a428bb0eb9b00768fc27afd673670b\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "4571e816-4276-4936-ad6e-8d2321cd7294"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.017901"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.08, sql.active_record;dur=13.16, instantiation.active_record;dur=0.05, process_action.action_controller;dur=15.52"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"data\": {\n            \"id\": \"1\",\n            \"type\": \"user\",\n            \"attributes\": {\n                \"id\": 1,\n                \"name\": \"Parth P.\",\n                \"email\": \"parth@gmail.com\",\n                \"phone\": \"+91 349859485945\",\n                \"updated_at\": \"2023-08-29T17:55:30.794Z\",\n                \"created_at\": \"2023-08-29T17:55:30.794Z\",\n                \"articles\": {\n                    \"data\": []\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"User deleted successfully..\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Articles",
+			"item": [
+				{
+					"name": "Index Articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/articles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Index Articles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/articles",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"articles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"064f1b44a8b595fbbeb10f15cbd3568c\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "7bdaa401-1271-43f9-ad29-be447b2342ae"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.049155"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.09, sql.active_record;dur=1.15, instantiation.active_record;dur=2.87, process_action.action_controller;dur=6.55"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"articles\": [\n        {\n            \"id\": 1,\n            \"title\": \"Test 123\",\n            \"body\": null,\n            \"user_id\": 1,\n            \"created_at\": \"2023-08-29T11:31:33.280Z\",\n            \"updated_at\": \"2023-08-29T11:31:33.280Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Show Article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/articles/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show Article",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/articles/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"articles",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e86397d607526f9e1b5bfd52ef6c1db1\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "b713a929-9b73-4c32-ad54-792d95f33af8"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.004172"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.08, sql.active_record;dur=0.76, instantiation.active_record;dur=0.04, process_action.action_controller;dur=2.33"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"article\": {\n        \"data\": {\n            \"id\": \"1\",\n            \"type\": \"article\",\n            \"attributes\": {\n                \"id\": 1,\n                \"title\": \"Ruby on rails app\",\n                \"body\": \"This is a ROR tutorial for beginners\",\n                \"updated_at\": \"2023-08-29T18:03:08.392Z\",\n                \"created_at\": \"2023-08-29T18:03:08.392Z\"\n            },\n            \"relationships\": {\n                \"user\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"user\"\n                    }\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"errors\": null\n}"
+						},
+						{
+							"name": "Show Article",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/articles/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"articles",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f28a1cfb5bccddd83e1d70fe753b9873\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "1de7ed83-570e-4893-b761-c3b2b2beeb2e"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.010273"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.11, sql.active_record;dur=0.77, instantiation.active_record;dur=0.04, process_action.action_controller;dur=2.78"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"article\": {\n        \"data\": {\n            \"id\": \"1\",\n            \"type\": \"article\",\n            \"attributes\": {\n                \"id\": 1,\n                \"title\": \"Ruby on rails app\",\n                \"body\": \"Ruby on rails tutorials for beginners 2023\",\n                \"updated_at\": \"2023-08-29T18:18:58.383Z\",\n                \"created_at\": \"2023-08-29T18:03:08.392Z\"\n            },\n            \"relationships\": {\n                \"user\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"user\"\n                    }\n                },\n                \"comments\": {\n                    \"data\": [\n                        {\n                            \"id\": \"3\",\n                            \"type\": \"comment\"\n                        },\n                        {\n                            \"id\": \"4\",\n                            \"type\": \"comment\"\n                        },\n                        {\n                            \"id\": \"5\",\n                            \"type\": \"comment\"\n                        },\n                        {\n                            \"id\": \"6\",\n                            \"type\": \"comment\"\n                        },\n                        {\n                            \"id\": \"7\",\n                            \"type\": \"comment\"\n                        }\n                    ]\n                }\n            }\n        }\n    },\n    \"errors\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Article",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"user_id\": 10,\n        \"title\": \"Ruby on rails app\",\n        \"body\": \"This is a ROR tutorial for beginners\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/articles",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Article",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"user_id\": 2,\n        \"title\": \"Ruby on rails app\",\n        \"body\": \"This is a ROR tutorial for beginners\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/articles",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"articles"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"92ce250021ef7d0bb9304e0859cd7321\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "32b89909-0783-4018-a36a-724598efd2a3"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.022516"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.10, sql.active_record;dur=4.60, instantiation.active_record;dur=0.07, process_action.action_controller;dur=8.25"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"article\": {\n        \"data\": {\n            \"id\": \"2\",\n            \"type\": \"article\",\n            \"attributes\": {\n                \"id\": 2,\n                \"title\": \"Ruby on rails app\",\n                \"body\": \"This is a ROR tutorial for beginners\",\n                \"updated_at\": \"2023-08-29T18:18:09.553Z\",\n                \"created_at\": \"2023-08-29T18:18:09.553Z\"\n            },\n            \"relationships\": {\n                \"user\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"user\"\n                    }\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"article created successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Article",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"title\": \"RoR tutorials 2023\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/articles/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Article",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"body\": \"Ruby on rails tutorials for beginners 2023\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/articles/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"articles",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"191e58c52b6a28c1aff9868a6db769e1\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "c75ce0de-baf8-409e-8402-ac542edcde07"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.018448"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.09, sql.active_record;dur=13.61, instantiation.active_record;dur=0.06, process_action.action_controller;dur=16.41"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"article\": {\n        \"data\": {\n            \"id\": \"1\",\n            \"type\": \"article\",\n            \"attributes\": {\n                \"id\": 1,\n                \"title\": \"Ruby on rails app\",\n                \"body\": \"Ruby on rails tutorials for beginners 2023\",\n                \"updated_at\": \"2023-08-29T18:18:58.383Z\",\n                \"created_at\": \"2023-08-29T18:03:08.392Z\"\n            },\n            \"relationships\": {\n                \"user\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"user\"\n                    }\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"article updated successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Article",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/articles/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"articles",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Article",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/articles/3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"articles",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"758adef0f5564620cfff71c3ffbea6e4\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "c3da7144-bdef-4094-835c-8f5779509fd8"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.021902"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.11, sql.active_record;dur=12.79, instantiation.active_record;dur=0.05, process_action.action_controller;dur=20.04"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"article was successfully destroyed.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Create Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"user_id\": 2,\n        \"commentable_id\": 1,\n        \"commentable_type\": \"Article\",\n        \"title\": \"Comment 1 from postman\",\n        \"description\": \"Comment 1 from postman\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/comments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Comment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"user_id\": 2,\n        \"commentable_id\": 1,\n        \"commentable_type\": \"Article\",\n        \"title\": \"Comment 1 from postman\",\n        \"description\": \"Comment 1 from postman\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/comments",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ca68441a5cee1b571b8a1644514a94f3\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "62c3b83b-63e7-4521-9bde-a385a81ffd17"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.081117"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "sql.active_record;dur=14.43, start_processing.action_controller;dur=0.10, unpermitted_parameters.action_controller;dur=0.11, instantiation.active_record;dur=2.20, process_action.action_controller;dur=31.67"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"comment\": {\n        \"data\": {\n            \"id\": \"7\",\n            \"type\": \"comment\",\n            \"attributes\": {\n                \"id\": 7,\n                \"title\": \"Comment 1 from postman\",\n                \"description\": null,\n                \"updated_at\": \"2023-08-29T18:32:34.376Z\",\n                \"created_at\": \"2023-08-29T18:32:34.376Z\",\n                \"article\": {\n                    \"data\": {\n                        \"id\": \"1\",\n                        \"type\": \"article\",\n                        \"attributes\": {\n                            \"title\": \"Ruby on rails app\"\n                        },\n                        \"relationships\": {}\n                    }\n                },\n                \"comment\": null\n            },\n            \"relationships\": {\n                \"user\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"user\"\n                    }\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"Comment created successfully.\"\n}"
+						},
+						{
+							"name": "Create Comment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"user_id\": 2,\n        \"commentable_id\": 2,\n        \"commentable_type\": \"Comment\",\n        \"title\": \"Comment 1 from postman\",\n        \"description\": \"Comment 1 from postman\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/comments",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f5e89fbeca59a9b9d1dc53b32c68ce7a\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "dadf0cdf-6b0a-4810-8a72-ef92895a2fc0"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.018389"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.08, unpermitted_parameters.action_controller;dur=0.08, sql.active_record;dur=13.23, instantiation.active_record;dur=0.06, process_action.action_controller;dur=16.64"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"comment\": {\n        \"data\": {\n            \"id\": \"8\",\n            \"type\": \"comment\",\n            \"attributes\": {\n                \"id\": 8,\n                \"title\": \"Comment 1 from postman\",\n                \"description\": null,\n                \"updated_at\": \"2023-08-29T18:33:09.604Z\",\n                \"created_at\": \"2023-08-29T18:33:09.604Z\",\n                \"article\": null,\n                \"comment\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"comment\",\n                        \"attributes\": {\n                            \"title\": \"Comment 1 from postman\"\n                        },\n                        \"relationships\": {}\n                    }\n                }\n            },\n            \"relationships\": {\n                \"user\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"user\"\n                    }\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"Comment created successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Show Comment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/comments/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show Comment",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/comments/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comments",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d97649d19021550bb2008d72bdcb222e\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "254891a4-fff0-4934-ad71-5c14917aa207"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.006535"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.08, sql.active_record;dur=1.67, instantiation.active_record;dur=0.08, process_action.action_controller;dur=4.13"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"comment\": {\n        \"data\": {\n            \"id\": \"1\",\n            \"type\": \"comment\",\n            \"attributes\": {\n                \"id\": 1,\n                \"title\": \"Comment 1 from postman\",\n                \"description\": null,\n                \"updated_at\": \"2023-08-29T18:21:05.787Z\",\n                \"created_at\": \"2023-08-29T18:21:05.787Z\",\n                \"article\": {\n                    \"data\": {\n                        \"id\": \"1\",\n                        \"type\": \"article\",\n                        \"attributes\": {\n                            \"title\": \"Ruby on rails app\"\n                        },\n                        \"relationships\": {}\n                    }\n                },\n                \"comment\": null\n            },\n            \"relationships\": {\n                \"user\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"user\"\n                    }\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"title\": \"Updated Comment 5 from postman\",\n        \"description\": \"Comment 5\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/comments/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Comment",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"data\": {\n        \"description\": \"Updated Comment 5 description\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/comments/5",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comments",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f9c653a0295c4a9cda4b53a68c5b2e09\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "e3e559bf-589c-4a80-8865-0b73dd9986de"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.019819"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.14, sql.active_record;dur=14.04, instantiation.active_record;dur=0.12, process_action.action_controller;dur=17.39"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"comment\": {\n        \"data\": {\n            \"id\": \"5\",\n            \"type\": \"comment\",\n            \"attributes\": {\n                \"id\": 5,\n                \"title\": \"Comment 1 from postman\",\n                \"description\": \"Updated Comment 5 description\",\n                \"updated_at\": \"2023-08-29T18:33:45.197Z\",\n                \"created_at\": \"2023-08-29T18:29:23.082Z\",\n                \"article\": {\n                    \"data\": {\n                        \"id\": \"1\",\n                        \"type\": \"article\",\n                        \"attributes\": {\n                            \"title\": \"Ruby on rails app\"\n                        },\n                        \"relationships\": {}\n                    }\n                },\n                \"comment\": null\n            },\n            \"relationships\": {\n                \"user\": {\n                    \"data\": {\n                        \"id\": \"2\",\n                        \"type\": \"user\"\n                    }\n                },\n                \"comments\": {\n                    \"data\": []\n                }\n            }\n        }\n    },\n    \"message\": \"Comment was successfully updated.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/comments/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Comment",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/comments/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comments",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"dd843b6189e1a6e2c97679c72def2c29\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "eae828b6-9bae-43c2-ac62-f881e64d4fed"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.040196"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.07, sql.active_record;dur=36.55, instantiation.active_record;dur=0.11, process_action.action_controller;dur=38.57"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Comment successfully deleted\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Index Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/comments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Index Comments",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/comments",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"comments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"04d42d8bda604f920269923f47c952b5\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "278c8069-e557-4629-bea8-17e54bc84ca8"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.009624"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.06, sql.active_record;dur=3.61, instantiation.active_record;dur=0.14, process_action.action_controller;dur=7.88"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"comments\": {\n        \"data\": [\n            {\n                \"id\": \"3\",\n                \"type\": \"comment\",\n                \"attributes\": {\n                    \"id\": 3,\n                    \"title\": \"Comment 1 from postman\",\n                    \"description\": null,\n                    \"updated_at\": \"2023-08-29T18:25:51.872Z\",\n                    \"created_at\": \"2023-08-29T18:25:51.872Z\",\n                    \"article\": {\n                        \"data\": {\n                            \"id\": \"1\",\n                            \"type\": \"article\",\n                            \"attributes\": {\n                                \"title\": \"Ruby on rails app\"\n                            },\n                            \"relationships\": {}\n                        }\n                    },\n                    \"comment\": null\n                },\n                \"relationships\": {\n                    \"user\": {\n                        \"data\": {\n                            \"id\": \"2\",\n                            \"type\": \"user\"\n                        }\n                    },\n                    \"comments\": {\n                        \"data\": []\n                    }\n                }\n            },\n            {\n                \"id\": \"4\",\n                \"type\": \"comment\",\n                \"attributes\": {\n                    \"id\": 4,\n                    \"title\": \"Comment 1 from postman\",\n                    \"description\": null,\n                    \"updated_at\": \"2023-08-29T18:26:49.709Z\",\n                    \"created_at\": \"2023-08-29T18:26:49.709Z\",\n                    \"article\": {\n                        \"data\": {\n                            \"id\": \"1\",\n                            \"type\": \"article\",\n                            \"attributes\": {\n                                \"title\": \"Ruby on rails app\"\n                            },\n                            \"relationships\": {}\n                        }\n                    },\n                    \"comment\": null\n                },\n                \"relationships\": {\n                    \"user\": {\n                        \"data\": {\n                            \"id\": \"2\",\n                            \"type\": \"user\"\n                        }\n                    },\n                    \"comments\": {\n                        \"data\": []\n                    }\n                }\n            },\n            {\n                \"id\": \"5\",\n                \"type\": \"comment\",\n                \"attributes\": {\n                    \"id\": 5,\n                    \"title\": \"Comment 1 from postman\",\n                    \"description\": \"Updated Comment 5 description\",\n                    \"updated_at\": \"2023-08-29T18:33:45.197Z\",\n                    \"created_at\": \"2023-08-29T18:29:23.082Z\",\n                    \"article\": {\n                        \"data\": {\n                            \"id\": \"1\",\n                            \"type\": \"article\",\n                            \"attributes\": {\n                                \"title\": \"Ruby on rails app\"\n                            },\n                            \"relationships\": {}\n                        }\n                    },\n                    \"comment\": null\n                },\n                \"relationships\": {\n                    \"user\": {\n                        \"data\": {\n                            \"id\": \"2\",\n                            \"type\": \"user\"\n                        }\n                    },\n                    \"comments\": {\n                        \"data\": []\n                    }\n                }\n            },\n            {\n                \"id\": \"6\",\n                \"type\": \"comment\",\n                \"attributes\": {\n                    \"id\": 6,\n                    \"title\": \"Comment 1 from postman\",\n                    \"description\": null,\n                    \"updated_at\": \"2023-08-29T18:31:54.590Z\",\n                    \"created_at\": \"2023-08-29T18:31:54.590Z\",\n                    \"article\": {\n                        \"data\": {\n                            \"id\": \"1\",\n                            \"type\": \"article\",\n                            \"attributes\": {\n                                \"title\": \"Ruby on rails app\"\n                            },\n                            \"relationships\": {}\n                        }\n                    },\n                    \"comment\": null\n                },\n                \"relationships\": {\n                    \"user\": {\n                        \"data\": {\n                            \"id\": \"2\",\n                            \"type\": \"user\"\n                        }\n                    },\n                    \"comments\": {\n                        \"data\": []\n                    }\n                }\n            },\n            {\n                \"id\": \"7\",\n                \"type\": \"comment\",\n                \"attributes\": {\n                    \"id\": 7,\n                    \"title\": \"Comment 1 from postman\",\n                    \"description\": null,\n                    \"updated_at\": \"2023-08-29T18:32:34.376Z\",\n                    \"created_at\": \"2023-08-29T18:32:34.376Z\",\n                    \"article\": {\n                        \"data\": {\n                            \"id\": \"1\",\n                            \"type\": \"article\",\n                            \"attributes\": {\n                                \"title\": \"Ruby on rails app\"\n                            },\n                            \"relationships\": {}\n                        }\n                    },\n                    \"comment\": null\n                },\n                \"relationships\": {\n                    \"user\": {\n                        \"data\": {\n                            \"id\": \"2\",\n                            \"type\": \"user\"\n                        }\n                    },\n                    \"comments\": {\n                        \"data\": []\n                    }\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
